@@ -5,7 +5,6 @@ import { removeFromCart, handleQuantityChange } from '@/redux/cartSlice'
 import { Link } from 'react-router-dom'
 import { FaMinusSquare, FaPlusSquare } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
-import Checkout from './checkout'
 
 const Cart = () => {
   const cart = useSelector(state => state.cart.cart)
