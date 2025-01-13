@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import sunBg from "@/assets/images/sunglassesBg.jpeg"
+import sunBg from "@/assets/images/sunglassesbg.jpeg"
 import {Form} from "react-bootstrap"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
