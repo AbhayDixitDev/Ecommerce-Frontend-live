@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Button, Modal } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeFromCart, handleQuantityChange } from '../redux/cartSlice'
+import { removeFromCart, handleQuantityChange } from '@/redux/cartSlice'
 import { Link } from 'react-router-dom'
 import { FaMinusSquare, FaPlusSquare } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
