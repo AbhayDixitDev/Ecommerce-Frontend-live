@@ -74,11 +74,11 @@ const ProductShow = () => {
             <Col md={8} >
 
              <Row>
-                <Col md={12} style={{display:"flex",justifyContent:"center",alignItems:"center",height:"50vh"}}>
-            {loading ? <p>Loading...</p> : <img src={mainImg} alt="" height={"100%"} />}
+                <Col md={12} xs={11} style={{display:"flex",justifyContent:"center",alignItems:"center",height:"50vh"}}>
+            {loading ? <p>Loading...</p> : <img src={mainImg} alt="" height={"100%"}/>}
 
                 </Col>
-             <Col key={Math.random()} md={12} style={{padding:"20px 0px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+             <Col key={Math.random()} md={12} sm={12} style={{padding:"20px 0px",display:"flex",justifyContent:"center",alignItems:"center"}}>
                       {loading ? <p>Loading...</p> : product.img.map((item) => {
                         return(
                             <img key={Math.random()} src={item} alt="" height={"100px"} style={{padding:"0px 10px"}} onClick={()=>{setMainImg(item)}}/>

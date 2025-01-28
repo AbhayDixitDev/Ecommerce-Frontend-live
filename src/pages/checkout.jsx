@@ -42,10 +42,14 @@ const Checkout = () => {
       });
 
       window.location.href = data.url; 
+      setLoading(false);
+
     } catch (error) {
       setError(error.response ? error.response.data.error.message : 'An error occurred during payment processing.');
     } finally {
       setLoading(false);
+      dispatch(clearCart());
+
     }
   };
 
