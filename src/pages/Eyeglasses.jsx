@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import EyeBg from '@/assets/images/eyeglassesBg.jpeg'
+import EyeBg from "/images/eyeglassesBg.jpeg"
 
 import {Form} from "react-bootstrap"
 import axios from 'axios'
